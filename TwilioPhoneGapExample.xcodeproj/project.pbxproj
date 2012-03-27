@@ -523,6 +523,8 @@
 					"\"$(SRCROOT)\"",
 				);
 				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
 					"-weak_framework",
 					UIKit,
 					"-weak_framework",
@@ -558,6 +560,8 @@
 					"\"$(SRCROOT)\"",
 				);
 				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
 					"-weak_framework",
 					UIKit,
 					"-weak_framework",
