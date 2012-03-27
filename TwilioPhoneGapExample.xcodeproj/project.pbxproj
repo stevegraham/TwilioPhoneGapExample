@@ -38,6 +38,7 @@
 		8D2A21B81522141100E9D6C1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2A21B71522141100E9D6C1 /* MainViewController.m */; };
 		8D2A21BA1522141100E9D6C1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2A21B91522141100E9D6C1 /* MainViewController.xib */; };
 		8D2A21BE1522141100E9D6C1 /* verify.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8D2A21BD1522141100E9D6C1 /* verify.sh */; };
+		8D2A21C51522174900E9D6C1 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 8D2A21C41522174900E9D6C1 /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		8D2A21B91522141100E9D6C1 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		8D2A21BC1522141100E9D6C1 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		8D2A21BD1522141100E9D6C1 /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
+		8D2A21C41522174900E9D6C1 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		8D2A215A1522141000E9D6C1 = {
 			isa = PBXGroup;
 			children = (
+				8D2A21C41522174900E9D6C1 /* www */,
 				8D2A21861522141000E9D6C1 /* TwilioPhoneGapExample */,
 				8D2A216B1522141000E9D6C1 /* Frameworks */,
 				8D2A21691522141000E9D6C1 /* Products */,
@@ -330,6 +333,7 @@
 				8D2A21B11522141000E9D6C1 /* Cordova.plist in Resources */,
 				8D2A21BA1522141100E9D6C1 /* MainViewController.xib in Resources */,
 				8D2A21BE1522141100E9D6C1 /* verify.sh in Resources */,
+				8D2A21C51522174900E9D6C1 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
