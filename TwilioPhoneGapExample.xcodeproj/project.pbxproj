@@ -39,6 +39,7 @@
 		8D2A21BA1522141100E9D6C1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2A21B91522141100E9D6C1 /* MainViewController.xib */; };
 		8D2A21BE1522141100E9D6C1 /* verify.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8D2A21BD1522141100E9D6C1 /* verify.sh */; };
 		8D2A21C51522174900E9D6C1 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 8D2A21C41522174900E9D6C1 /* www */; };
+		8D2A21C8152217F500E9D6C1 /* TCPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2A21C7152217F500E9D6C1 /* TCPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,8 @@
 		8D2A21BC1522141100E9D6C1 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		8D2A21BD1522141100E9D6C1 /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
 		8D2A21C41522174900E9D6C1 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		8D2A21C6152217F500E9D6C1 /* TCPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCPlugin.h; path = ../../twilio_client_phonegap/iOS/TCPlugin.h; sourceTree = "<group>"; };
+		8D2A21C7152217F500E9D6C1 /* TCPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCPlugin.m; path = ../../twilio_client_phonegap/iOS/TCPlugin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +260,8 @@
 		8D2A21BB1522141100E9D6C1 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				8D2A21C6152217F500E9D6C1 /* TCPlugin.h */,
+				8D2A21C7152217F500E9D6C1 /* TCPlugin.m */,
 				8D2A21BC1522141100E9D6C1 /* README */,
 			);
 			name = Plugins;
@@ -363,6 +368,7 @@
 				8D2A218D1522141000E9D6C1 /* main.m in Sources */,
 				8D2A21B51522141000E9D6C1 /* AppDelegate.m in Sources */,
 				8D2A21B81522141100E9D6C1 /* MainViewController.m in Sources */,
+				8D2A21C8152217F500E9D6C1 /* TCPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
