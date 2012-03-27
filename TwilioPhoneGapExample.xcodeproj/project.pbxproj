@@ -40,6 +40,8 @@
 		8D2A21BE1522141100E9D6C1 /* verify.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8D2A21BD1522141100E9D6C1 /* verify.sh */; };
 		8D2A21C51522174900E9D6C1 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 8D2A21C41522174900E9D6C1 /* www */; };
 		8D2A21C8152217F500E9D6C1 /* TCPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2A21C7152217F500E9D6C1 /* TCPlugin.m */; };
+		8D2A21DE15221BAE00E9D6C1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2A21DD15221BAE00E9D6C1 /* CFNetwork.framework */; };
+		8D2A21EE15221D1300E9D6C1 /* libTwilioClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2A21ED15221D1300E9D6C1 /* libTwilioClient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +85,14 @@
 		8D2A21C41522174900E9D6C1 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		8D2A21C6152217F500E9D6C1 /* TCPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCPlugin.h; path = ../../twilio_client_phonegap/iOS/TCPlugin.h; sourceTree = "<group>"; };
 		8D2A21C7152217F500E9D6C1 /* TCPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCPlugin.m; path = ../../twilio_client_phonegap/iOS/TCPlugin.m; sourceTree = "<group>"; };
+		8D2A21DD15221BAE00E9D6C1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8D2A21E715221D0600E9D6C1 /* TCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCConnection.h; sourceTree = "<group>"; };
+		8D2A21E815221D0600E9D6C1 /* TCConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCConnectionDelegate.h; sourceTree = "<group>"; };
+		8D2A21E915221D0600E9D6C1 /* TCDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDevice.h; sourceTree = "<group>"; };
+		8D2A21EA15221D0600E9D6C1 /* TCDeviceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDeviceDelegate.h; sourceTree = "<group>"; };
+		8D2A21EB15221D0600E9D6C1 /* TCPresenceEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPresenceEvent.h; sourceTree = "<group>"; };
+		8D2A21EC15221D0600E9D6C1 /* TwilioClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwilioClient.h; sourceTree = "<group>"; };
+		8D2A21ED15221D1300E9D6C1 /* libTwilioClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTwilioClient.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D2A21DE15221BAE00E9D6C1 /* CFNetwork.framework in Frameworks */,
 				8D2A216D1522141000E9D6C1 /* Foundation.framework in Frameworks */,
 				8D2A216F1522141000E9D6C1 /* UIKit.framework in Frameworks */,
 				8D2A21711522141000E9D6C1 /* CoreGraphics.framework in Frameworks */,
@@ -104,6 +115,7 @@
 				8D2A21831522141000E9D6C1 /* MobileCoreServices.framework in Frameworks */,
 				8D2A21851522141000E9D6C1 /* CoreMedia.framework in Frameworks */,
 				8D2A21901522141000E9D6C1 /* Cordova.framework in Frameworks */,
+				8D2A21EE15221D1300E9D6C1 /* libTwilioClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +132,9 @@
 		8D2A215A1522141000E9D6C1 = {
 			isa = PBXGroup;
 			children = (
+				8D2A21ED15221D1300E9D6C1 /* libTwilioClient.a */,
+				8D2A21E615221D0600E9D6C1 /* Headers */,
+				8D2A21DD15221BAE00E9D6C1 /* CFNetwork.framework */,
 				8D2A21C41522174900E9D6C1 /* www */,
 				8D2A21861522141000E9D6C1 /* TwilioPhoneGapExample */,
 				8D2A216B1522141000E9D6C1 /* Frameworks */,
@@ -265,6 +280,19 @@
 				8D2A21BC1522141100E9D6C1 /* README */,
 			);
 			name = Plugins;
+			sourceTree = "<group>";
+		};
+		8D2A21E615221D0600E9D6C1 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				8D2A21E715221D0600E9D6C1 /* TCConnection.h */,
+				8D2A21E815221D0600E9D6C1 /* TCConnectionDelegate.h */,
+				8D2A21E915221D0600E9D6C1 /* TCDevice.h */,
+				8D2A21EA15221D0600E9D6C1 /* TCDeviceDelegate.h */,
+				8D2A21EB15221D0600E9D6C1 /* TCPresenceEvent.h */,
+				8D2A21EC15221D0600E9D6C1 /* TwilioClient.h */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,6 +517,11 @@
 					"CORDOVA_FRAMEWORK=1",
 				);
 				INFOPLIST_FILE = "TwilioPhoneGapExample/TwilioPhoneGapExample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/TwilioClient 2\"",
+					"\"$(SRCROOT)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					UIKit,
@@ -500,7 +533,7 @@
 					/usr/lib/libSystem.B.dylib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -519,6 +552,11 @@
 					"CORDOVA_FRAMEWORK=1",
 				);
 				INFOPLIST_FILE = "TwilioPhoneGapExample/TwilioPhoneGapExample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/TwilioClient 2\"",
+					"\"$(SRCROOT)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					UIKit,
@@ -530,7 +568,7 @@
 					/usr/lib/libSystem.B.dylib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -555,6 +593,7 @@
 				8D2A21C31522141100E9D6C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
